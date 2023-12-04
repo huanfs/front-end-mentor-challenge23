@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <Container 
-      source="src\images\icon-sedans.svg"
+      source="src/images/icon-sedans.svg"
       title="sedans" 
       description="chose an sedan for its affordability 
       and excelent fuel economy, ideal for cruising in the 
