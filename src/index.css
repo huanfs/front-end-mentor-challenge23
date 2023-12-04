@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Fraunces:opsz,wght@9..144,700&family=Lexend+Deca&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+body{
+  height:100vh;
+  display:grid;
+  place-items:center;
+  font-family:'Luxend Deca', sans-serif;
+}
+
+#root{
+  width:700px;
+  height:400px;
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  border-radius:5px;
+}
+#root .card:nth-child(1){
+  border-radius:5px 0 0 5px;
+  background-color:hsl(31, 77%, 52%);
+}
+#root .card:nth-child(2){
+  background-color:hsl(184, 100%, 22%);
+}
+#root .card:nth-child(3){
+  border-radius:0 5px 5px 0;
+  background-color:hsl(179, 100%, 13%);
+}
+
+@media screen and (max-width:510px){
+  body{
+    display:grid;
+    place-items:center;
+  }
+  #root{
+    width:60%;
+    height:100%;
+    grid-template-columns:1fr;
+  }
+  #root .card:nth-child(1){
+    border-radius:5px 5px 0 0;
+  }
+  #root .card:nth-child(3){
+    border-radius:0 0 5px 5px;
+  }
+}
