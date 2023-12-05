@@ -2,11 +2,14 @@ import { useEffect } from "react";
 import './App.css'
 /*components*/
 import Container from "./components/container.jsx";
+import sedans from "./images/icon-sedans.svg";
+import suvs from "./images/icon-suvs.svg";
+import luxury from "./images/icon-luxury.svg";
 function App() {
   return (
     <>
       <Container 
-      source="src/images/icon-sedans.svg"
+      source={sedans}
       title="sedans" 
       description="chose an sedan for its affordability 
       and excelent fuel economy, ideal for cruising in the 
@@ -14,14 +17,14 @@ function App() {
       />
 
       <Container
-      source="src\images\icon-suvs.svg"
+      source={suvs}
       title="suvs"
       description="take an suv for it spacious 
       interior, power and versatility, Perfect for your
       next family vacation and off-road adventures"
       />
       <Container
-      source="src\images\icon-luxury.svg"
+      source={luxury}
       title="luxury"
       description="cruise in the best cars brands
       without the bloated prices enjoy the enhance
